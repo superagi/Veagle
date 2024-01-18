@@ -1,0 +1,22 @@
+{
+    "llm": {
+        "name": "mistral7b",
+        "hf_path": "mistralai/Mistral-7B-Instruct-v0.2",
+        "download_in_repo": false
+    },
+    "vision_encoder": {
+        "name": "mplug_owl_2",
+        "hf_path": "MAGAer13/mplug-owl2-llama2-7b",
+        "download_in_repo": false
+    },
+    "qformer": {
+        "name": "instruct_blip_Qformer",
+        "hf_path": "Salesforce/instructblip-flan-t5-xl",
+        "download_in_repo": false
+    },
+    "veagle": {
+        "name": "veagle",
+        "hf_path": "SuperAGI/Veagle",
+        "download_in_repo": true
+    }
+}
