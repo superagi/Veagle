@@ -12,7 +12,7 @@ Rajat Chawla*, Arkajit Datta*, Tushar Verma, Adarsh Jha, Anmol Gautam, Ayush Vat
 
 ## Release
 - [1/18] 🔥 We released the training code of Veagle. 
-- [1/18] 🔥 We released **Veagle: Advancement in Multimodal representation Learning**.  Checkout the [paper](https://arxiv.org/abs/2308.09936). 
+- [1/18] 🔥 We released **Veagle: Advancement in Multimodal representation Learning**.
 
 
 ## Installation
@@ -20,13 +20,14 @@ Rajat Chawla*, Arkajit Datta*, Tushar Verma, Adarsh Jha, Anmol Gautam, Ayush Vat
 1. Clone the repository
 
 ```bash
-git clone https://github.com/mlpc-ucsd/BLIVA
+git clone https://github.com/superagi/Veagle
 cd Veagle
 ```
 
 2. Run installation script 
 
 ```bash
+source venv/bin/activate
 chmod +x install.sh
 ./install.sh
 ```
@@ -59,7 +60,7 @@ python evaluate.py --answer_qs \
 
 After downloading the training datasets and specify their path in [dataset configs](veagle/configs/datasets/), we are ready for training. We utilized 8x A100 SXM in our experiments. Please adjust hyperparamters according to your GPU resources in train config file. It may take transformers around 2 minutes to load the model, give some time for the model to start training. Make sure you have completed the installation procedure before you start training. Here we give an example of traning Veagle.
 
-1. Pretraining of BLIVA's visual assistant branch
+1. Pretraining of Veagle's visual assistant branch
 
 ```Shell
 torchrun --nnodes=1 --nproc_per_node=8 \
@@ -67,7 +68,7 @@ torchrun --nnodes=1 --nproc_per_node=8 \
     --cfg-path train_configs/pretrain_veagle_mistral.yaml
 ```
 
-2. Instruction Finetuning BLIVA
+2. Instruction Finetuning Veagle
 
 You can run Finetuning after you have completed pretraining. Make sure to provide the pretrained model's path in the finetuning config.
 
@@ -78,17 +79,6 @@ torchrun --nnodes=1 --nproc_per_node=8 \
 ```
 
 
-## Citation
-
-If you find Veagle useful for your research and applications, please cite using this BibTeX:
-```bibtex
-@misc{hu2023bliva,
-      title={BLIVA: A Simple Multimodal LLM for Better Handling of Text-Rich Visual Questions}, 
-      author={Wenbo Hu and Yifan Xu and Yi Li and Weiyue Li and Zeyuan Chen and Zhuowen Tu},
-      publisher={arXiv:2308.09936},
-      year={2023},
-}
-```
 
 ## Acknowledgement
 - [BLIP2](https://huggingface.co/docs/transformers/main/model_doc/blip-2) The model architecture of BLIVA follows BLIP-2. Don't forget to check this great open-source work if you don't know it before. 
