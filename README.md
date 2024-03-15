@@ -3,7 +3,7 @@ Rajat Chawla*, Arkajit Datta*, Tushar Verma, Adarsh Jha, Anmol Gautam, Ayush Vat
 
 **SuperAGI**
 
-<a href='https://arxiv.org/abs/2308.09936'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/SuperAGI/Veagle'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Veagle-blue'></a> 
+<a href='[https://arxiv.org/abs/2308.09936](https://arxiv.org/abs/2403.08773)'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/SuperAGI/Veagle'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Veagle-blue'></a> 
 
 
 <p align="center">
